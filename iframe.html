@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LEE - BSIT 1A</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      min-height: 100vh;
+      padding: 60px 30px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #00e5ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 229, 255, 0.4);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .iframe-box {
+      background-color: #1a1a1a;
+      border: 2px solid #00e5ff;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0, 229, 255, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .iframe-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 18px 35px rgba(0, 229, 255, 0.3);
+    }
+
+    .iframe-box iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    .iframe-label {
+      padding: 20px;
+      background-color: #262626;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #00e5ff;
+      text-align: center;
+      border-top: 2px solid #00e5ff;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .iframe-box iframe {
+        height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BLUE LOCK I-FRAME</h1>
+  </header>
+
+  <div class="container">
+    <div class="iframe-box">
+      <iframe src="https://bluelock.fandom.com/wiki/Yoichi_Isagi" title="YOIPIHIMSAGI"></iframe>
+      <div class="iframe-label">Isagi Yoichi</div>
+    </div>
+
+    <div class="iframe-box">
+      <iframe src="https://bluelock.fandom.com/wiki/Meguru_Bachira" title="BACHIRAMYGOAT"></iframe>
+      <div class="iframe-label">Bachira Meguru</div>
+    </div>
+
+    <div class="iframe-box">
+      <iframe src="https://bluelock.fandom.com/wiki/Hyoma_Chigiri" title="CHIGIRICHAM"></iframe>
+      <div class="iframe-label">Chigiri Hyoma</div>
+    </div>
+  </div>
+
+</body>
+</html>
